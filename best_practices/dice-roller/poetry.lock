@@ -41,6 +41,18 @@ files = [
 markers = {main = "platform_system == \"Windows\"", dev = "sys_platform == \"win32\""}
 
 [[package]]
+name = "export"
+version = "0.2.1"
+description = "Control module exports"
+optional = false
+python-versions = ">=3.8,<4.0"
+groups = ["main"]
+files = [
+    {file = "export-0.2.1-py3-none-any.whl", hash = "sha256:223ea74ae90715f56c3009e4cf19c8289b92ab56a3a0a8a00c5cf31e464f58f7"},
+    {file = "export-0.2.1.tar.gz", hash = "sha256:b206d7c6cb2246781321bc30394bf1364496fdfc1d1ea69cfe67da6d67095a7e"},
+]
+
+[[package]]
 name = "flask"
 version = "3.1.0"
 description = "A simple framework for building complex web applications."
@@ -245,5 +257,5 @@ watchdog = ["watchdog (>=2.3)"]
 
 [metadata]
 lock-version = "2.1"
-python-versions = ">=3.12"
-content-hash = "2676d0b305c371230965d7a2ddde79fe738d991e6f714c3e5e4e58c68d7b383e"
+python-versions = ">=3.12,<4.0"
+content-hash = "d217719119ff75377559f5a51888f865bedac3578d0b482c885e1815056b8d36"

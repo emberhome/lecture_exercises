@@ -6,9 +6,10 @@ authors = [
     {name = "Emma Berniczky",email = "e.berniczky@gmail.com"}
 ]
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python =  ">=3.12,<4.0"
 dependencies = [
-    "flask (>=3.1.0,<4.0.0)"
+    "flask (>=3.1.0,<4.0.0)",
+    "export (>=0.2.1,<0.3.0)"
 ]
 
 
@@ -18,4 +19,3 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.4"
-
