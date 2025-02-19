@@ -1,5 +1,5 @@
 # python-ci.yml
-name: basic CI but for public repo
+name: basic CI but for public repo take 2
 
 on:
   push:
