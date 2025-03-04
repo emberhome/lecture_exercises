@@ -1,0 +1,51 @@
+Script started on 2025-03-04 11:44:05+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="143" LINES="44"]
+[1m[7m%[27m[1m[0m                                                                                                                                               ]2;eberniczky@lewagon-data-eng-vm-emberhome:~/code/emberhome/lecture_exercises/docker_deploy/fast_app]1;..ploy/fast_app[0m[27m[24m[J[01;32m➜  [36mfast_app[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[104C[🐍 3.12.8][115D[?1h=[?2004h[0m[27m[24m[J[01;32m➜  [36mfast_app[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[104C[🐍 3.12.8][115D[1m[31mc[0m[39m[0m[32mc[32md[39m [4m.[24m[4m.[4m.[24m[?1l>[?2004l
+]2;cd ..]1;cd[1m[7m%[27m[1m[0m                                                                                                                                               ]2;eberniczky@lewagon-data-eng-vm-emberhome:~/code/emberhome/lecture_exercises/docker_deploy]1;..docker_deploy[0m[27m[24m[J[01;32m➜  [36mdocker_deploy[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[99C[🐍 3.12.8][110D[?1h=[?2004h[1m[31mc[0m[39m[0m[32mc[32md[39m [4m.[24m[4m.[4m.[24m[?1l>[?2004l
+]2;cd ..]1;cd[1m[7m%[27m[1m[0m                                                                                                                                               ]2;eberniczky@lewagon-data-eng-vm-emberhome:~/code/emberhome/lecture_exercises]1;..ure_exercises[0m[27m[24m[J[01;32m➜  [36mlecture_exercises[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[95C[🐍 3.12.8][106D[?1h=[?2004h[1m[31mc[0m[39m[1m[31mc[1m[31ma[0m[39m[0m[32mc[0m[32ma[32mt[39m git[39mc[39ma[39mt[4C[32mc[32ma[32mt[39m[4Cig=      [1m[31mc[1m[31ma[0m[39m[39m [1m[31mc[0m[39m[0m[39m [0m[39m [32ml[39m[32ml[32ms[39m -al[?1l>[?2004l
+]2;ls --color=tty -al]1;lstotal 40
+drwxrwxr-x 8 eberniczky eberniczky 4096 Mar  4 09:23 [0m[01;34m.[0m
+drwxr-xr-x 7 eberniczky eberniczky 4096 Feb 27 19:42 [01;34m..[0m
+drwxrwxr-x 3 eberniczky eberniczky 4096 Feb 19 13:25 [01;34mbest_practices[0m
+drwxrwxr-x 3 eberniczky eberniczky 4096 Feb 25 11:52 [01;34mdata_lakes[0m
+drwxrwxr-x 3 eberniczky eberniczky 4096 Mar  4 09:27 [01;34mdocker_deploy[0m
+drwxrwxr-x 8 eberniczky eberniczky 4096 Feb 25 12:35 [01;34m.git[0m
+drwxrwxr-x 3 eberniczky eberniczky 4096 Feb 25 11:43 [01;34m.github[0m
+-rw-rw-r-- 1 eberniczky eberniczky  405 Feb 13 18:22 .gitignore
+drwxrwxr-x 3 eberniczky eberniczky 4096 Feb 13 18:15 [01;34mpython_101[0m
+-rw-rw-r-- 1 eberniczky eberniczky   25 Feb 13 17:54 readme.md
+[1m[7m%[27m[1m[0m                                                                                                                                               ]2;eberniczky@lewagon-data-eng-vm-emberhome:~/code/emberhome/lecture_exercises]1;..ure_exercises[0m[27m[24m[J[01;32m➜  [36mlecture_exercises[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[95C[🐍 3.12.8][106D[?1h=[?2004h[1m[31mc[0m[39m[0m[32mc[32md[39m [4m.[24m[4m.[4mg[24m[4mg[4mit[24m[?1l>[?2004l
+]2;cd .git]1;cd[1m[7m%[27m[1m[0m                                                                                                                                               ]2;eberniczky@lewagon-data-eng-vm-emberhome:~/code/emberhome/lecture_exercises/.git]1;..xercises/.git[0m[27m[24m[J[01;32m➜  [36m.git[00m [01;34mgit:([31mGIT_DIR![34m)[00m [K[108C[🐍 3.12.8][119D[?1h=[?2004h[0m[27m[24m[J[01;32m➜  [36m.git[00m [01;34mgit:([31mGIT_DIR![34m)[00m [K[108C[🐍 3.12.8][119D[32ml[39m[32ml[32ms[39m[?1l>[?2004l
+]2;ls --color=tty]1;ls[0m[01;34mbranches[0m  COMMIT_EDITMSG  config  description  FETCH_HEAD  HEAD  [01;34mhooks[0m  index  [01;34minfo[0m  [01;34mlogs[0m  [01;34mobjects[0m  ORIG_HEAD  packed-refs  [01;34mrefs[0m
+[1m[7m%[27m[1m[0m                                                                                                                                               ]2;eberniczky@lewagon-data-eng-vm-emberhome:~/code/emberhome/lecture_exercises/.git]1;..xercises/.git[0m[27m[24m[J[01;32m➜  [36m.git[00m [01;34mgit:([31mGIT_DIR![34m)[00m [K[108C[🐍 3.12.8][119D[?1h=[?2004h[32ml[39m[32ml[32ms[39m -al[?1l>[?2004l
+]2;ls --color=tty -al]1;lstotal 68
+drwxrwxr-x   8 eberniczky eberniczky 4096 Feb 25 12:35 [0m[01;34m.[0m
+drwxrwxr-x   8 eberniczky eberniczky 4096 Mar  4 09:23 [01;34m..[0m
+drwxrwxr-x   2 eberniczky eberniczky 4096 Feb 12 16:03 [01;34mbranches[0m
+-rw-rw-r--   1 eberniczky eberniczky   82 Feb 25 12:30 COMMIT_EDITMSG
+-rw-rw-r--   1 eberniczky eberniczky  271 Feb 25 12:33 config
+-rw-rw-r--   1 eberniczky eberniczky   73 Feb 12 16:03 description
+-rw-rw-r--   1 eberniczky eberniczky  100 Feb 25 12:34 FETCH_HEAD
+-rw-rw-r--   1 eberniczky eberniczky   23 Feb 25 12:33 HEAD
+drwxrwxr-x   2 eberniczky eberniczky 4096 Feb 12 16:03 [01;34mhooks[0m
+-rw-rw-r--   1 eberniczky eberniczky 4251 Feb 25 12:35 index
+drwxrwxr-x   2 eberniczky eberniczky 4096 Feb 12 16:03 [01;34minfo[0m
+drwxrwxr-x   3 eberniczky eberniczky 4096 Feb 12 16:17 [01;34mlogs[0m
+drwxrwxr-x 117 eberniczky eberniczky 4096 Feb 25 12:34 [01;34mobjects[0m
+-rw-rw-r--   1 eberniczky eberniczky   41 Feb 25 12:35 ORIG_HEAD
+-rw-rw-r--   1 eberniczky eberniczky   46 Feb 25 12:33 packed-refs
+drwxrwxr-x   5 eberniczky eberniczky 4096 Feb 12 16:27 [01;34mrefs[0m
+[1m[7m%[27m[1m[0m                                                                                                                                               ]2;eberniczky@lewagon-data-eng-vm-emberhome:~/code/emberhome/lecture_exercises/.git]1;..xercises/.git[0m[27m[24m[J[01;32m➜  [36m.git[00m [01;34mgit:([31mGIT_DIR![34m)[00m [K[108C[🐍 3.12.8][119D[?1h=[?2004h[1m[31mc[0m[39m[0m[32mc[32md[39m [4m.[24m[4m.[4m.[24m[?1l>[?2004l
+]2;cd ..]1;cd[1m[7m%[27m[1m[0m                                                                                                                                               ]2;eberniczky@lewagon-data-eng-vm-emberhome:~/code/emberhome/lecture_exercises]1;..ure_exercises[0m[27m[24m[J[01;32m➜  [36mlecture_exercises[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[95C[🐍 3.12.8][106D[?1h=[?2004h[0m[27m[24m[J[01;32m➜  [36mlecture_exercises[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[95C[🐍 3.12.8][106D[32ml[39m[32ml[32ms[39m[?1l>[?2004l
+]2;ls --color=tty]1;ls[0m[01;34mbest_practices[0m  [01;34mdata_lakes[0m  [01;34mdocker_deploy[0m  [01;34mpython_101[0m  readme.md
+[1m[7m%[27m[1m[0m                                                                                                                                               ]2;eberniczky@lewagon-data-eng-vm-emberhome:~/code/emberhome/lecture_exercises]1;..ure_exercises[0m[27m[24m[J[01;32m➜  [36mlecture_exercises[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[95C[🐍 3.12.8][106D[?1h=[?2004h[32ml[39m[32ml[32ms[39m -aal  l[?1l>[?2004l
+]2;ls --color=tty -al]1;lstotal 40
+drwxrwxr-x 8 eberniczky eberniczky 4096 Mar  4 09:23 [0m[01;34m.[0m
+drwxr-xr-x 7 eberniczky eberniczky 4096 Feb 27 19:42 [01;34m..[0m
+drwxrwxr-x 3 eberniczky eberniczky 4096 Feb 19 13:25 [01;34mbest_practices[0m
+drwxrwxr-x 3 eberniczky eberniczky 4096 Feb 25 11:52 [01;34mdata_lakes[0m
+drwxrwxr-x 3 eberniczky eberniczky 4096 Mar  4 09:27 [01;34mdocker_deploy[0m
+drwxrwxr-x 8 eberniczky eberniczky 4096 Feb 25 12:35 [01;34m.git[0m
+drwxrwxr-x 3 eberniczky eberniczky 4096 Feb 25 11:43 [01;34m.github[0m
+-rw-rw-r-- 1 eberniczky eberniczky  405 Feb 13 18:22 .gitignore
+drwxrwxr-x 3 eberniczky eberniczky 4096 Feb 13 18:15 [01;34mpython_101[0m
+-rw-rw-r-- 1 eberniczky eberniczky   25 Feb 13 17:54 readme.md
