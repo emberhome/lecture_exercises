@@ -1,0 +1,146 @@
+ 1858  2025-03-04 09:20  ls
+ 1859  2025-03-04 09:20  cd
+ 1860  2025-03-04 09:20  ls
+ 1861  2025-03-04 09:20  cd code
+ 1862  2025-03-04 09:20  ls
+ 1863  2025-03-04 09:20  cd emberhome
+ 1864  2025-03-04 09:20  ls
+ 1865  2025-03-04 09:20  cd lecture_exercises
+ 1866  2025-03-04 09:20  ls
+ 1867  2025-03-04 09:23  mkdir docker_deploy && cd docker_deploy 
+ 1868  2025-03-04 09:23  pwd
+ 1869  2025-03-04 09:27  poetry new fast_app
+ 1870  2025-03-04 09:27  poetry add fastapi uvicorn
+ 1871  2025-03-04 09:27  cd fast_app
+ 1872  2025-03-04 09:27  poetry add fastapi uvicorn
+ 1873  2025-03-04 09:28  touch fast_app/main.py
+ 1874  2025-03-04 09:30  poetry run uvicorn fast_app.main:app
+ 1875  2025-03-04 09:38  touch Dockerfile
+ 1876  2025-03-04 09:39  python --version
+ 1877  2025-03-04 09:56  touch .dockerignore
+ 1878  2025-03-04 10:01  docker build . 
+ 1879  2025-03-04 10:02  docker build -t fast . 
+ 1880  2025-03-04 10:03  docker images
+ 1881  2025-03-04 10:04  docker run fast 
+ 1882  2025-03-04 10:06  docker ps
+ 1883  2025-03-04 10:08  docker stop $(docker ps -q)
+ 1884  2025-03-04 10:11  docker run -p 8080:8000 fast 
+ 1885  2025-03-04 10:25  docker stop $(docker ps -q)
+ 1886  2025-03-04 10:30  docker run --rm -i hadolint/hadolint < Dockerfile
+ 1887  2025-03-04 10:43  docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock wagoodman/dive:latest fast
+ 1888  2025-03-04 11:19  ^[[200~mkdir bind_volume
+ 1889  2025-03-04 11:19  docker run \\n    --mount type=bind,source="$(pwd)"/bind_volume,target=/app/bind_volume \n: 1741087177:0;mkdir bind_volume\ndocker run \\n    --mount type=bind,source="$(pwd)"/bind_volume,target=/app/bind_volume \\n    fast
+ 1890  2025-03-04 11:23  pwd
+ 1891  2025-03-04 11:26  docker run -it -v /home/eberniczky/code/emberhome/lecture_exercises/docker_deploy/fast_app/bind_volume:/app_bind_volume fast /bin/bash
+ 1892  2025-03-04 11:28  docker run -it -v /home/eberniczky/code/emberhome/lecture_exercises/docker_deploy/fast_app/bind_volume:/app/bind_volume fast /bin/bash
+ 1893  2025-03-04 11:33  docker run -it -v /home/eberniczky/code/emberhome/lecture_exercises/docker_deploy/fast_app/fast_app:/app/fast_app fast /bin/bash
+ 1894  2025-03-04 11:34  docker run -it -v /home/eberniczky/code/emberhome/lecture_exercises/docker_deploy/fast_app/fast_app:/app/fast_app -p 8000:8000 fast /bin/bash
+ 1895  2025-03-04 11:34  docker build -t fast . 
+ 1896  2025-03-04 11:35  docker run -it -v /home/eberniczky/code/emberhome/lecture_exercises/docker_deploy/fast_app/fast_app:/app/fast_app -p 8000:8000 fast
+ 1897  2025-03-04 11:44  script output.txt
+ 1898  2025-03-04 11:53  cd ..
+ 1899  2025-03-04 11:53  ls -al
+ 1900  2025-03-04 11:53  cd .git
+ 1901  2025-03-04 11:53  ls
+ 1902  2025-03-04 11:53  ls -al
+ 1903  2025-03-04 11:53  cd ..
+ 1904  2025-03-04 11:53  ls
+ 1905  2025-03-04 11:53  ls -al
+ 1906  2025-03-04 11:53  cat .gitignore
+ 1907  2025-03-04 11:54  ls
+ 1908  2025-03-04 11:54  cd docker_deploy
+ 1909  2025-03-04 11:54  ls
+ 1910  2025-03-04 11:54  cd fast_app
+ 1911  2025-03-04 12:57  ls
+ 1912  2025-03-04 12:57  cd emberhome
+ 1913  2025-03-04 12:57  ls
+ 1914  2025-03-04 12:58  cd lecture_exercises
+ 1915  2025-03-04 12:58  ls
+ 1916  2025-03-04 12:58  cd docker_deploy
+ 1917  2025-03-04 12:58  ls
+ 1918  2025-03-04 12:58  cd fast_app
+ 1919  2025-03-04 13:01  cd ..
+ 1920  2025-03-04 13:02  mkdir terminal_log && cd terminal_log
+ 1921  2025-03-04 13:02  cd ..
+ 1922  2025-03-04 13:02  ls
+ 1923  2025-03-04 13:02  script terminal_log/my_terminal_session.log\n
+ 1924* 2025-03-04 13:03  ls
+ 1925* 2025-03-04 13:03  cd fast_app
+ 1926* 2025-03-04 13:06  docker tag fast europe-west1-docker.pkg.dev/airy-aria-450311-u1/api/fast:0.1
+ 1927* 2025-03-04 13:06  docker push $_
+ 1928* 2025-03-04 13:06  cd ..
+ 1929* 2025-03-04 13:06  ls
+ 1930* 2025-03-04 13:06  cd ..
+ 1931* 2025-03-04 13:06  ls
+ 1932* 2025-03-04 13:07  ls -al
+ 1933* 2025-03-04 13:07  cat .gitignore
+ 1934* 2025-03-04 13:08  vim
+ 1935* 2025-03-04 13:10  code .gitignore
+ 1936* 2025-03-04 13:13  docker push $_
+ 1937* 2025-03-04 13:13  docker tag fast europe-west1-docker.pkg.dev/airy-aria-450311-u1/api/fast:0.1
+ 1938* 2025-03-04 13:13  docker push $_
+ 1939* 2025-03-04 13:38  docker build -t fast .
+ 1940* 2025-03-04 13:39  ls
+ 1941* 2025-03-04 13:39  cd docker_deploy
+ 1942* 2025-03-04 13:39  docker build -t fast .
+ 1943* 2025-03-04 13:39  ls
+ 1944* 2025-03-04 13:39  cd fast_app
+ 1945* 2025-03-04 13:39  docker build -t fast .
+ 1946* 2025-03-04 13:39  docker run fast 
+ 1947* 2025-03-04 13:40  docker run -e PORT=8000 fast 
+ 1948* 2025-03-04 13:42  docker kill $(docker ps -q)
+ 1949* 2025-03-04 13:42  docker ps
+ 1950* 2025-03-04 13:42  docker tag fast europe-west1-docker.pkg.dev/airy-aria-450311-u1/api/fast:0.2
+ 1951* 2025-03-04 13:43  docker push $_
+ 1952* 2025-03-04 13:45  gcloud run deploy fast-app \\n--image europe-west1-docker.pkg.dev/airy-aria-450311-u1/api/fast \\n--region=europe-west1 \\n--allow-unauthenticated
+ 1953* 2025-03-04 13:48  gcloud run deploy fast-app \\n--image europe-west1-docker.pkg.dev/airy-aria-450311-u1/api/fast:0.2 \\n--region=europe-west1 \\n--allow-unauthenticated
+ 1954* 2025-03-04 14:06  exit
+ 1955  2025-03-04 14:06  git status
+ 1956  2025-03-04 14:06  git add .
+ 1957  2025-03-04 14:06  git status
+ 1958  2025-03-04 14:06  git commit -m "lecture done"
+ 1959  2025-03-04 14:06  git push 
+ 1960  2025-03-04 14:08  cd ..
+ 1961  2025-03-04 14:08  ls
+ 1962  2025-03-04 14:08  cd docker_deploy
+ 1963  2025-03-04 14:09  awk '/^[^ ]/ {print $0}' my_terminal_session.log > ~/commands_only.log\n
+ 1964  2025-03-04 14:10  awk '/^[^ ]/ {print $0}' terminal_log/my_terminal_session.log > ~/commands_only.log\n
+ 1965  2025-03-04 14:10  awk '/^[^ ]/ {print $0}' terminal_log/my_terminal_session.log > terminal_log/commands_only.log\n
+ 1966  2025-03-04 14:11  cat terminal_log/commands_only.log
+ 1967  2025-03-04 14:12  cd ..
+ 1968  2025-03-04 14:12  ls -al
+ 1969  2025-03-04 14:12  cat .gitignore
+ 1970  2025-03-04 14:12  code .gitignore
+ 1971  2025-03-04 14:12  cd docker_deploy
+ 1972  2025-03-04 14:13  git status
+ 1973  2025-03-04 14:13  git add .
+ 1974  2025-03-04 14:13  git commit -m "cleaner log"
+ 1975  2025-03-04 14:13  git push 
+ 1976  2025-03-04 14:16  history > terminal_log/my_commands_history.log\n
+ 1977  2025-03-04 14:17  history > terminal_log/commands_$(date +'%Y-%m-%d').log\n
+ 1978  2025-03-04 14:19  nano ~/.zshrc\n
+ 1979  2025-03-04 14:20  ^[[200~source ~/.zshrc
+ 1980  2025-03-04 14:20  source ~/.zshrc\n
+ 1981  2025-03-04 14:21  history > terminal_log/commands_$(date +'%Y-%m-%d').log\n
+ 1982  2025-03-04 14:21  history | grep "$(date +'%Y-%m-%d')" > terminal_log/commands_$(date +'%Y-%m-%d').log\n
+ 1983  2025-03-04 14:23  tail -n 100 ~/.zsh_history > terminal_log/commands_today.log\n
+ 1984  2025-03-04 14:23  tail -n 200 ~/.zsh_history > terminal_log/commands_today.log\n
+ 1985  2025-03-04 14:24  stat ~/.zsh_history\n
+ 1986  2025-03-04 14:27  git add . 
+ 1987  2025-03-04 14:27  git commit -m "cleaned up logs"
+ 1988  2025-03-04 14:27  git push 
+ 1989  2025-03-04 14:30  cd ..
+ 1990  2025-03-04 14:30  ls -al
+ 1991  2025-03-04 14:30  code .gitignore
+ 1992  2025-03-04 14:31  ls
+ 1993  2025-03-04 14:31  cd docker_deploy
+ 1994  2025-03-04 14:33  history | grep "$(date +'%Y-%m-%d')" > terminal_log/zsh_commands_$(date +'%Y-%m-%d').log
+ 1995  2025-03-04 14:33  history 
+ 1996  2025-03-04 14:34  history -a\n
+ 1997  2025-03-04 14:34  cat ~/.zsh_history\n
+ 1998  2025-03-04 14:36  nano ~/.zshrc\n
+ 1999  2025-03-04 14:37  source ~/.zshrc\n
+ 2000  2025-03-04 14:38  cd ..
+ 2001  2025-03-04 14:38  ls
+ 2002  2025-03-04 14:38  cd docker_deploy
+ 2003  2025-03-04 14:38  history
