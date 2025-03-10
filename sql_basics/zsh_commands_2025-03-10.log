@@ -1,0 +1,69 @@
+ 2537  2025-03-10 18:51  ls
+ 2538  2025-03-10 18:51  cd
+ 2539  2025-03-10 18:51  ks
+ 2540  2025-03-10 18:51  ls
+ 2541  2025-03-10 18:51  cd code
+ 2542  2025-03-10 18:51  ls
+ 2543  2025-03-10 18:51  cd emberhome
+ 2544  2025-03-10 18:52  ls
+ 2545  2025-03-10 18:52  cd lecture_exercises
+ 2546  2025-03-10 18:52  ls
+ 2547  2025-03-10 18:52  mkdir sql_basics && cd sql_basics
+ 2548  2025-03-10 18:53  docker pull postgres:15.4
+ 2549  2025-03-10 18:56  ls
+ 2550  2025-03-10 18:56  cd emberhome
+ 2551  2025-03-10 18:56  ls
+ 2552  2025-03-10 18:56  cd lecture_exercises
+ 2553  2025-03-10 18:56  ls
+ 2554  2025-03-10 18:56  cd sql_basics
+ 2555  2025-03-10 18:57  docker ps
+ 2556  2025-03-10 18:57  docker pus
+ 2557  2025-03-10 18:57  docker ps
+ 2558  2025-03-10 19:01  cd ...
+ 2559  2025-03-10 19:01  ls
+ 2560  2025-03-10 19:01  cd data-engineering-challenges
+ 2561  2025-03-10 19:01  ls
+ 2562  2025-03-10 19:01  cd 01-Software-Engineering-Best-Practices
+ 2563  2025-03-10 19:01  ls
+ 2564  2025-03-10 19:01  cd ..
+ 2565  2025-03-10 19:01  cd ~/code/emberhome/data-engineering-challenges/
+ 2566  2025-03-10 19:01  git pull upstream main -X ours
+ 2567  2025-03-10 19:01  cd 02-Database-Fundamentals/01-SQL-Basics/01-Setup
+ 2568  2025-03-10 19:02  code .
+ 2569  2025-03-10 19:03  cd ..
+ 2570  2025-03-10 19:03  ls
+ 2571  2025-03-10 19:03  cd ..
+ 2572  2025-03-10 19:03  cd ,,
+ 2573  2025-03-10 19:03  cd ..
+ 2574  2025-03-10 19:03  ls
+ 2575  2025-03-10 19:03  cd lecture_exercises
+ 2576  2025-03-10 19:03  ls
+ 2577  2025-03-10 19:03  cd sql_basics
+ 2578  2025-03-10 19:03  ls
+ 2579  2025-03-10 19:03  docker run -p 5400:5432 -e POSTGRES_USER=oli -e POSTGRES_PASSWORD=abc123 -v "$(pwd)/pgdata:/var/lib/postgresql/data" postgres:15.4
+ 2580  2025-03-10 19:05  docker ps
+ 2581  2025-03-10 19:05  docker exec -it 06a5a8ae4a5f bash
+ 2582  2025-03-10 20:03  ls
+ 2583  2025-03-10 20:03  cd emberhome
+ 2584  2025-03-10 20:03  ls
+ 2585  2025-03-10 20:03  cd data-engineering-challenges
+ 2586  2025-03-10 20:03  ls
+ 2587  2025-03-10 20:03  cd ..
+ 2588  2025-03-10 20:03  cd lecture_exercises
+ 2589  2025-03-10 20:03  ls
+ 2590  2025-03-10 20:03  cd sql_basics
+ 2591  2025-03-10 20:03  ls
+ 2592  2025-03-10 20:03  docker ps
+ 2593  2025-03-10 20:03  curl -L https://raw.githubusercontent.com/catherinedevlin/opensourceshakespeare/master/shakespeare.sql | docker exec -i $(docker ps -q) psql --username=oli --dbname=shakespeare -a -f-
+ 2594  2025-03-10 20:31  history | grep "$(date +'%Y-%m-%d')" > terminal_log/zsh_commands_$(date +'%Y-%m-%d').log 
+ 2595  2025-03-10 20:32  history | grep "$(date +'%Y-%m-%d')" > zsh_commands_$(date +'%Y-%m-%d').log 
+ 2596  2025-03-10 20:33  zsh history
+ 2597  2025-03-10 20:33  history
+ 2598  2025-03-10 20:33  nano ~/.zshrc\n
+ 2599  2025-03-10 20:35  source ~/.zshrc\n
+ 2600  2025-03-10 20:35  ls
+ 2601  2025-03-10 20:37  nano ~/.zshrc\n
+ 2602  2025-03-10 20:37  source ~/.zshrc\n
+ 2603  2025-03-10 20:37  nano ~/.zshrc\n
+ 2604  2025-03-10 20:38  source ~/.zshrc\n
+ 2605  2025-03-10 20:38  history 
