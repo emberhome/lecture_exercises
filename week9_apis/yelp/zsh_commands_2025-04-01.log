@@ -1,0 +1,95 @@
+ 3258  2025-04-01 16:53  ls
+ 3259  2025-04-01 16:53  cd emberhome
+ 3260  2025-04-01 16:53  ks
+ 3261  2025-04-01 16:53  ls
+ 3262  2025-04-01 16:53  cd lecture_exercises
+ 3263  2025-04-01 16:53  ls
+ 3264  2025-04-01 16:54  mkdir week9_apis && cd $$
+ 3265  2025-04-01 16:55  mkdir week9_apis && cd week9_apis
+ 3266  2025-04-01 16:56  cd week9_apis
+ 3267  2025-04-01 16:56  poetry new fast-playground
+ 3268  2025-04-01 16:56  cd fast-playground
+ 3269  2025-04-01 16:56  poetry add fastapi
+ 3270  2025-04-01 16:58  touch main.py
+ 3271  2025-04-01 17:00  poetry run python main.py
+ 3272  2025-04-01 17:02  poetry add uvicorn
+ 3273  2025-04-01 17:05  poetry run uvicorn main:app --reload
+ 3274  2025-04-01 17:14  ls
+ 3275  2025-04-01 17:14  cd emberhome
+ 3276  2025-04-01 17:14  ks
+ 3277  2025-04-01 17:14  ls
+ 3278  2025-04-01 17:14  cd lecture_exercises
+ 3279  2025-04-01 17:14  ls
+ 3280  2025-04-01 17:15  cd week9_apis
+ 3281  2025-04-01 17:15  ls
+ 3282  2025-04-01 17:15  mkdir yelp && cd yelp
+ 3283  2025-04-01 17:15  touch main.py
+ 3284  2025-04-01 17:21  poetry run uvicorn main:app --reload
+ 3285  2025-04-01 17:22  poetry new yelp
+ 3286  2025-04-01 17:22  cd ..
+ 3287  2025-04-01 17:22  cd ~
+ 3288  2025-04-01 17:22  ls
+ 3289  2025-04-01 17:22  cd code
+ 3290  2025-04-01 17:22  ls
+ 3291  2025-04-01 17:22  cd emberhome
+ 3292  2025-04-01 17:22  ls
+ 3293  2025-04-01 17:22  cd le
+ 3294  2025-04-01 17:22  cd lecture_exercises
+ 3295  2025-04-01 17:22  ls
+ 3296  2025-04-01 17:22  cd week9_apis
+ 3297  2025-04-01 17:22  ls
+ 3298  2025-04-01 17:22  poetry add yelp
+ 3299  2025-04-01 17:25  poetry new add yelp
+ 3300  2025-04-01 17:25  poetry new yelp
+ 3301  2025-04-01 17:26  poetry add fastapi
+ 3302  2025-04-01 17:26  ls
+ 3303  2025-04-01 17:26  cd yelp
+ 3304  2025-04-01 17:26  poetry add fastapi
+ 3305  2025-04-01 17:26  touch main.py
+ 3306  2025-04-01 17:27  poetry run uvicorn main:app --reload
+ 3307  2025-04-01 17:27  poetry add uvicorn
+ 3308  2025-04-01 17:27  poetry run uvicorn main:app --reload
+ 3309  2025-04-01 17:30  ls
+ 3310  2025-04-01 17:30  cd emberhome
+ 3311  2025-04-01 17:30  ls
+ 3312  2025-04-01 17:30  cd lecture_exercises
+ 3313  2025-04-01 17:30  ls
+ 3314  2025-04-01 17:31  cd week9_apis
+ 3315  2025-04-01 17:31  ls
+ 3316  2025-04-01 17:31  cd yelp
+ 3317  2025-04-01 17:31  poetry add pydantic
+ 3318  2025-04-01 17:31  touch schemas.py
+ 3319  2025-04-01 17:48  cd ..
+ 3320  2025-04-01 17:48  ls
+ 3321  2025-04-01 17:48  cd yelp
+ 3322  2025-04-01 17:48  poetry run uvicorn main:app --reload
+ 3323  2025-04-01 18:03  ls
+ 3324  2025-04-01 18:03  cd emberhome
+ 3325  2025-04-01 18:03  ls
+ 3326  2025-04-01 18:03  cd lecture_exercises
+ 3327  2025-04-01 18:03  ls
+ 3328  2025-04-01 18:03  cd week9_apis
+ 3329  2025-04-01 18:03  ls
+ 3330  2025-04-01 18:03  cd yelp
+ 3331  2025-04-01 18:03  touch restaurants.sqlite
+ 3332  2025-04-01 18:03  touch database.py
+ 3333  2025-04-01 18:05  poetry add sqlalchemy
+ 3334  2025-04-01 18:07  touch models.py
+ 3335  2025-04-01 18:10  curl https://wagon-public-datasets.s3.amazonaws.com/data-engineering/restaurants_v2.csv > restaurants.csv\nsqlite3 restaurants.sqlite ".mode csv" ".import restaurants.csv restaurants" ".exit"
+ 3336  2025-04-01 18:32  /home/eberniczky/code/emberhome/data-engineering-challenges/01-Software-Engineering-Best-Practices/01-Setup/00-Test-Setup/.venv/bin/python /home/eberniczky/code/emberhome/lecture_exercises/week9_apis/yelp/database.py
+ 3337  2025-04-01 18:32  ls
+ 3338  2025-04-01 18:32  cd emberhome
+ 3339  2025-04-01 18:32  ls
+ 3340  2025-04-01 18:33  cd lecture_exercises
+ 3341  2025-04-01 18:33  ls
+ 3342  2025-04-01 18:33  cd week9_apis
+ 3343  2025-04-01 18:33  ls
+ 3344  2025-04-01 18:33  cd yelp
+ 3345  2025-04-01 18:33  ls
+ 3346  2025-04-01 19:11  poetry run python database.py
+ 3347  2025-04-01 19:12  OA
+ 3348  2025-04-01 19:40  poetry run python database.py
+ 3349  2025-04-01 19:42  curl https://wagon-public-datasets.s3.amazonaws.com/data-engineering/restaurants_v2.csv > restaurants.csv\nsqlite3 restaurants.sqlite ".mode csv" ".import restaurants.csv restaurants" ".exit"
+ 3350  2025-04-01 19:44  poetry run python database.py
+ 3351  2025-04-01 19:46  sqlite3 restaurants.sqlite ".mode csv" ".import restaurants.csv restaurants" ".exit"
+ 3352  2025-04-01 19:47  poetry run python database.py
