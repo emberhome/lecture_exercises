@@ -1,0 +1,45 @@
+ 3365  2025-04-02 12:08  ls
+ 3366  2025-04-02 12:08  cd emberhome
+ 3367  2025-04-02 12:08  ls
+ 3368  2025-04-02 12:08  cd lecture_exercises
+ 3369  2025-04-02 12:08  ls
+ 3370  2025-04-02 12:08  cd week9_apis
+ 3371  2025-04-02 12:08  ls
+ 3372  2025-04-02 12:09  mv main.py main_alchemy.py
+ 3373  2025-04-02 12:19  cd yelp
+ 3374  2025-04-02 12:19  poetry run python main_alchemy.py
+ 3375  2025-04-02 12:20  poetry run python main.py
+ 3376  2025-04-02 12:23  poetry run uvicorn main_alchemy:app --reload
+ 3377  2025-04-02 12:55  /home/eberniczky/code/emberhome/data-engineering-challenges/01-Software-Engineering-Best-Practices/01-Setup/00-Test-Setup/.venv/bin/python /home/eberniczky/code/emberhome/lecture_exercises/week9_apis/yelp/main_alchemy.py
+ 3378  2025-04-02 12:56  ls
+ 3379  2025-04-02 12:56  cd emberhome
+ 3380  2025-04-02 12:56  ls
+ 3381  2025-04-02 12:56  cd lecture_exercises
+ 3382  2025-04-02 12:56  ls
+ 3383  2025-04-02 12:56  cd week9_apis
+ 3384  2025-04-02 12:56  ls
+ 3385  2025-04-02 12:56  cd yelp
+ 3386  2025-04-02 12:56  poetry python run main_alchemy.py
+ 3387  2025-04-02 12:57  poetry run python main_alchemy.py
+ 3388  2025-04-02 12:58  poetry run uvicorn main_alchemy:app --reload
+ 3389* 2025-04-02 13:24  psql postgres
+ 3390  2025-04-02 13:27  sqlite3 restaurants.sqlite\n
+ 3391  2025-04-02 13:27  poetry run uvicorn main_alchemy:app --reload
+ 3392  2025-04-02 13:28  sqlite3 restaurants.sqlite\n
+ 3393  2025-04-02 13:30  poetry run uvicorn main_alchemy:app --reload
+ 3394  2025-04-02 13:34  sqlite3 restaurants.sqlite\n
+ 3395  2025-04-02 13:37  poetry run uvicorn main_alchemy:app --reload
+ 3396  2025-04-02 13:38  sqlite3 restaurants.sqlite\n
+ 3397  2025-04-02 13:44  rm restaurants.sqlite
+ 3398  2025-04-02 13:45  poetry run alembic init alembic
+ 3399  2025-04-02 13:45  poetry add alembic
+ 3400  2025-04-02 13:45  poetry run alembic init alembic
+ 3401  2025-04-02 13:57  poetry run alembic revision --autogenerate -m "added restaurants table"
+ 3402  2025-04-02 13:58  poetry run alembic upgrade head
+ 3403  2025-04-02 14:01  poetry run alembic revision --autogenerate -m "added seats_nb column to restaurants table"
+ 3404  2025-04-02 14:02  poetry run alembic upgrade head
+ 3405  2025-04-02 14:02  sqlite3 restaurants.sqlite\n
+ 3406  2025-04-02 14:05  git status
+ 3407  2025-04-02 14:05  git add . 
+ 3408  2025-04-02 14:06  git commit -m "end of lecture"
+ 3409  2025-04-02 14:06  git push 
