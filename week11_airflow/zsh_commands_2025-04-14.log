@@ -1,0 +1,65 @@
+ 4007  2025-04-14 09:43  ls
+ 4008  2025-04-14 09:43  cd emberhome
+ 4009  2025-04-14 09:43  ls
+ 4010  2025-04-14 09:43  cd lecture_exercises
+ 4011  2025-04-14 09:43  ls
+ 4012  2025-04-14 09:43  mkdir week11_airflow && cd week11_airflow
+ 4013  2025-04-14 09:44  export AIRFLOW_HOME=${PWD}
+ 4014  2025-04-14 09:44  export AIRFLOW_HOME=${PWD} AIRFLOW_VERSION=2.3.0\nPYTHON_VERSION=3.8\nCONSTRAINT_URL="https://raw.githubusercontent.com/apache/airflow/constraints-${AIRFLOW_VERSION}/constraints-${PYTHON_VERSION}.txt"\npip install "apache-airflow==${AIRFLOW_VERSION}" --constraint "${CONSTRAINT_URL}"
+ 4015  2025-04-14 09:50  export AIRFLOW_HOME=${PWD}\nAIRFLOW_VERSION=2.3.0\nPYTHON_VERSION=3.8\nCONSTRAINT_URL="https://raw.githubusercontent.com/apache/airflow/constraints-${AIRFLOW_VERSION}/constraints-${PYTHON_VERSION}.txt"\npip install "apache-airflow==${AIRFLOW_VERSION}" --constraint "${CONSTRAINT_URL}"\n
+ 4016  2025-04-14 09:52  python --version
+ 4017  2025-04-14 09:53  pyenv install 3.8.18\n
+ 4018  2025-04-14 09:55  poetry init
+ 4019  2025-04-14 09:56  poetry env use $(pyenv prefix 3.8.18)/bin/python\n
+ 4020  2025-04-14 09:56  poetry lock
+ 4021  2025-04-14 09:56  poetry run python --version  # Should be Python 3.8.x\n
+ 4022  2025-04-14 09:58  poetry env remove python
+ 4023  2025-04-14 09:58  poetry env use $(pyenv prefix 3.8.18)/bin/python
+ 4024  2025-04-14 09:58  poetry run python --version  # Should be Python 3.8.x\n
+ 4025  2025-04-14 09:59  AIRFLOW_VERSION=2.3.0\nPYTHON_VERSION=3.8\nCONSTRAINT_URL="https://raw.githubusercontent.com/apache/airflow/constraints-${AIRFLOW_VERSION}/constraints-${PYTHON_VERSION}.txt"\n\npoetry run pip install "apache-airflow==${AIRFLOW_VERSION}" --constraint "${CONSTRAINT_URL}"\n
+ 4026  2025-04-14 10:00  export AIRFLOW_HOME=${PWD}
+ 4027  2025-04-14 10:00  airflow standalone
+ 4028  2025-04-14 10:01  poetry airflow export AIRFLOW_HOME=${PWD}
+ 4029  2025-04-14 10:01  poetry shell
+ 4030  2025-04-14 10:02  poetry run airflow standalone\n
+ 4031  2025-04-14 10:15  ls
+ 4032  2025-04-14 10:15  cd emberhome
+ 4033  2025-04-14 10:15  ls
+ 4034  2025-04-14 10:15  cd lecture_exercises
+ 4035  2025-04-14 10:15  ls
+ 4036  2025-04-14 10:15  cd week11_airflow
+ 4037  2025-04-14 10:15  poetry run airflow dags/lewagon_example.py
+ 4038  2025-04-14 10:18  poetry run airflow dags list\n
+ 4039  2025-04-14 10:56  poetry run airflow airflow connections add 'sqlite_connection' \\n                    --conn-type sqlite \\n                    --conn-host "$PWD/airflow.db"
+ 4040  2025-04-14 10:57  poetry run airflow connections add 'sqlite_connection' \\n                    --conn-type sqlite \\n                    --conn-host "$PWD/airflow.db"
+ 4041  2025-04-14 10:58  poetry run airflow export AIRFLOW_HOME=${PWD}
+ 4042  2025-04-14 10:58  poetry run python --version  # Should be Python 3.8.x\n
+ 4043  2025-04-14 10:58  poetry run airflow export AIRFLOW_HOME=${PWD}
+ 4044  2025-04-14 10:59  AIRFLOW_HOME=${PWD} poetry run airflow standalone\n
+ 4045  2025-04-14 11:01  ls
+ 4046  2025-04-14 11:01  cd emberhome
+ 4047  2025-04-14 11:01  ls
+ 4048  2025-04-14 11:01  cd lecture_exercises
+ 4049  2025-04-14 11:01  ls
+ 4050  2025-04-14 11:01  cd week11_airflow
+ 4051  2025-04-14 11:02  poetry run airflow connections add 'sqlite_connection' \\n                    --conn-type sqlite \\n                    --conn-host "$PWD/airflow.db"
+ 4052  2025-04-14 11:03  export AIRFLOW_HOME=${PWD}  # run this first
+ 4053  2025-04-14 11:03  poetry run airflow airflow db upgrade
+ 4054  2025-04-14 11:04  poetry run airflow db upgrade
+ 4055  2025-04-14 11:04  poetry run airflow connections add 'sqlite_connection' \\n                    --conn-type sqlite \\n                    --conn-host "$PWD/airflow.db"
+ 4056  2025-04-14 11:07  poetry run airflow db shell
+ 4057  2025-04-14 12:45  ls
+ 4058  2025-04-14 12:45  cd emberhome
+ 4059  2025-04-14 12:45  ls
+ 4060  2025-04-14 12:45  cd lecture_exercises
+ 4061  2025-04-14 12:45  ls
+ 4062  2025-04-14 12:45  cd week11_airflow
+ 4063  2025-04-14 12:45  ls
+ 4064  2025-04-14 12:45  export AIRFLOW_HOME=${PWD}
+ 4065  2025-04-14 12:45  poetry run airflow standalone
+ 4066  2025-04-14 13:12  ls
+ 4067  2025-04-14 13:13  cd emberhome
+ 4068  2025-04-14 13:13  ls
+ 4069  2025-04-14 13:13  cd lecture_exercises
+ 4070  2025-04-14 13:13  ls
+ 4071  2025-04-14 13:13  cd week11_airflow
