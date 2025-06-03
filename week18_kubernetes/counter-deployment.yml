@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: counter
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: counter
+  template:
+    metadata:
+      labels:
+        app: counter
+    spec:
+      containers:
+      - name: counter
+        image: europe-west1-docker.pkg.dev/data-engineering-students/student-images/k8s-lecture-app:dev
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "500m"
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+
+        readinessProbe:
+          httpGet:
+            path: /               # Change this to a path your app responds to
+            port: 8080
+          initialDelaySeconds: 5  # Wait 5 seconds before starting checks
+          periodSeconds: 10       # Check every 10 seconds
+        livenessProbe:
+          httpGet:
+            path: /               # Change this to a path your app responds to
+            port: 8080
+          initialDelaySeconds: 5  # Wait 5 seconds before starting checks
+          periodSeconds: 10       # Check every 10 seconds
+        ports:
+        - containerPort: 8080
+          name: counter-port
+        volumeMounts:
+        - name: counter-volume
+          mountPath: /app/pv-data
+      volumes:
+        - name: counter-volume
+          persistentVolumeClaim:
+            claimName: counter-claim

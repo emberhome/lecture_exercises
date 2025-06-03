@@ -1,0 +1,81 @@
+ 4910  2025-06-03 12:54  
+ 4911  2025-06-03 10:34  ls
+ 4912  2025-06-03 10:34  cd emberhome
+ 4913  2025-06-03 10:34  ls
+ 4914  2025-06-03 10:34  cd lecture_exercises
+ 4915  2025-06-03 10:34  mkdir week18_kubernetes
+ 4916  2025-06-03 10:34  ls
+ 4917  2025-06-03 10:34  cd week18_kubernetes
+ 4918  2025-06-03 10:35  minikube start
+ 4919  2025-06-03 10:38  kubectl get noes
+ 4920  2025-06-03 10:38  kubectl get nodes
+ 4921  2025-06-03 10:39  minikube dashboard
+ 4922  2025-06-03 10:41  ls
+ 4923  2025-06-03 10:41  cd emberhome
+ 4924  2025-06-03 10:41  ls lecture_exercises
+ 4925  2025-06-03 10:41  cd lecture_exercises
+ 4926  2025-06-03 10:42  cd week18_kubernetes
+ 4927  2025-06-03 10:42  kubectl create deployment counter --image=europe-west1-docker.pkg.dev/data-engineering-students/student-images/k8s-lecture-app:dev --replicas=4
+ 4928  2025-06-03 10:43  kubectl get pods
+ 4929  2025-06-03 10:44  echo '[[ $commands[kubectl] ]] && source <(kubectl completion zsh)' >> ~/.zshrc # add autocomplete permanently to your zsh shell
+ 4930  2025-06-03 10:44  source ~/.zshrc\n
+ 4931  2025-06-03 10:45  kubectl delete pods counter-5b57fcd88f-47n5n
+ 4932  2025-06-03 10:48  kubectl expose deployment counter --type=NodePort --port=8080
+ 4933  2025-06-03 10:48  minikube service counter
+ 4934  2025-06-03 10:55  kubectl delete deployments.apps counter
+ 4935  2025-06-03 10:56  kubectl delete services counter
+ 4936  2025-06-03 12:25  touch counter-deployment.yml
+ 4937  2025-06-03 12:54  zsh
+ 4938  2025-06-03 12:54  exec zsh
+ 4939  2025-06-03 12:55  ls
+ 4940  2025-06-03 12:55  cd emberhome
+ 4941  2025-06-03 12:55  ls
+ 4942  2025-06-03 12:55  cd lecture_exercises
+ 4943  2025-06-03 12:55  ls
+ 4944  2025-06-03 12:55  cd week18_kubernetes
+ 4945  2025-06-03 12:56  kubectl get nodes
+ 4946  2025-06-03 12:56  kubectl apply -f counter-deployment.yml
+ 4947  2025-06-03 13:12  kubectl port-forward pods/counter-c6fd5ffff-55fmc 8081:counter-port
+ 4948  2025-06-03 13:20  touch counter-service.yml
+ 4949  2025-06-03 13:27  kubectl apply -f .
+ 4950  2025-06-03 13:35  kubectl get svc
+ 4951  2025-06-03 13:36  kubectl port-forward services/counter 8081:service-port
+ 4952  2025-06-03 13:50  touch counter-volume.yml
+ 4953  2025-06-03 13:51  kubectl apply -f .
+ 4954  2025-06-03 13:51  touch counter-pvc.yml
+ 4955  2025-06-03 17:02  ls
+ 4956  2025-06-03 17:02  cd emberhome
+ 4957  2025-06-03 17:02  ls
+ 4958  2025-06-03 17:02  cd lecture_exercises
+ 4959  2025-06-03 17:02  cd week18_kubernetes
+ 4960  2025-06-03 17:02  kubectl apply -f .
+ 4961  2025-06-03 17:04  europe-west1-docker.pkg.dev/data-engineering-students/student-images/k8s-lecture-app:dev\n\n
+ 4962  2025-06-03 17:05  kubectl apply -f counter-deployment.yml
+ 4963  2025-06-03 17:06  kubectl port-forward pods/counter-c6fd5ffff-55fmc 8081:counter-port
+ 4964  2025-06-03 17:07  kubectl port-forward pods/counter-c6fd5ffff-55fmc 8081:service-port
+ 4965  2025-06-03 17:15  kubectl create deployment counter --image=europe-west1-docker.pkg.dev/data-engineering-students/student-images/k8s-lecture-app:dev --replicas=4
+ 4966  2025-06-03 17:25  minikube stop
+ 4967  2025-06-03 17:26  minikube status
+ 4968  2025-06-03 17:26  minikube delete
+ 4969  2025-06-03 17:27  minikube start 
+ 4970  2025-06-03 17:30  kubectl apply -f .
+ 4971  2025-06-03 17:33  kubectl port-forward services/counter 8081:service-port
+ 4972  2025-06-03 17:38  cd emberhome
+ 4973  2025-06-03 17:38  cd lecture_exercises
+ 4974  2025-06-03 17:38  cd week18_kubernetes
+ 4975  2025-06-03 18:24  cd ~/code/emberhome/data-engineering-challenges/
+ 4976  2025-06-03 18:24  git status
+ 4977  2025-06-03 18:25  git pull upstream main -X ours
+ 4978  2025-06-03 18:25  cd 03-Data-Storage-and-Batch-Pipelines/05-Kubernetes/01-Minikube-Kubectl
+ 4979  2025-06-03 18:34  cd ..
+ 4980  2025-06-03 18:34  ls
+ 4981  2025-06-03 18:34  cd ~
+ 4982  2025-06-03 18:34  ls
+ 4983  2025-06-03 18:34  cd code
+ 4984  2025-06-03 18:34  ls
+ 4985  2025-06-03 18:34  cd emberhome
+ 4986  2025-06-03 18:34  cd lecture_exercises
+ 4987  2025-06-03 18:34  cd week18_kubernetes
+ 4988  2025-06-03 18:34  git status
+ 4989  2025-06-03 18:34  git add . 
+ 4990  2025-06-03 18:34  git status

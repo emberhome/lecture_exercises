@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: counter-claim
+spec:
+  volumeName: counter-volume
+  resources:
+    requests:
+      storage: "2Gi"
+  #volumeMode: Filesystem
+  accessModes:
+    - ReadWriteOnce
