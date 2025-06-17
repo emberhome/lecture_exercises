@@ -1,0 +1,78 @@
+ 5445  2025-06-17 10:49  ls
+ 5446  2025-06-17 10:49  cd emberhome
+ 5447  2025-06-17 10:49  ls
+ 5448  2025-06-17 10:49  cd lecture_exercises
+ 5449  2025-06-17 10:49  ls
+ 5450  2025-06-17 10:50  mkdir week20_pyspark && cd  week20_pyspark
+ 5451  2025-06-17 10:50  code . 
+ 5452  2025-06-17 10:50  touch basic-job.py
+ 5453  2025-06-17 10:50  nano basic-job.py
+ 5454  2025-06-17 13:13  touch testing.py
+ 5455  2025-06-17 13:13  touch testing.ipynb
+ 5456  2025-06-17 13:25  java --version
+ 5457  2025-06-17 13:25  java -version
+ 5458  2025-06-17 13:25  readlink -f $(which java)\n
+ 5459  2025-06-17 13:26  export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+ 5460  2025-06-17 13:26  export PATH=$JAVA_HOME/bin:$PATH
+ 5461  2025-06-17 13:27  echo $JAVA_HOME\n
+ 5462  2025-06-17 13:27  python
+ 5463  2025-06-17 13:28  java -version
+ 5464  2025-06-17 13:29  jupyter notebook
+ 5465  2025-06-17 13:30  pyenv shell 3.11.11\n
+ 5466  2025-06-17 13:30  python --version\n# Should show: Python 3.11.11\n
+ 5467  2025-06-17 13:30  export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+ 5468  2025-06-17 13:30  export PATH=$JAVA_HOME/bin:$PATH
+ 5469  2025-06-17 13:30  jupyter notebook
+ 5470  2025-06-17 13:31  pip install notebook
+ 5471  2025-06-17 13:32  jupyter notebook
+ 5472  2025-06-17 13:35  cd ~
+ 5473  2025-06-17 13:36  ls
+ 5474  2025-06-17 13:36  cd code
+ 5475  2025-06-17 13:36  ls
+ 5476  2025-06-17 13:36  cd emm
+ 5477  2025-06-17 13:36  cd emberhome
+ 5478  2025-06-17 13:36  ls
+ 5479  2025-06-17 13:36  cd data-engineering-challenges
+ 5480  2025-06-17 13:36  cd 04-Data-at-Scale/01-Spark-Basics/01-Spark-Warmup
+ 5481  2025-06-17 13:36  code .
+ 5482  2025-06-17 13:38  cd ~
+ 5483  2025-06-17 13:38  ls
+ 5484  2025-06-17 13:38  cd code
+ 5485  2025-06-17 13:38  ls
+ 5486  2025-06-17 13:38  cd emberhome
+ 5487  2025-06-17 13:38  ls
+ 5488  2025-06-17 13:38  cd lecture_exercises
+ 5489  2025-06-17 13:38  ls
+ 5490  2025-06-17 13:38  cd week20_pyspark
+ 5491  2025-06-17 13:38  poetry install
+ 5492  2025-06-17 13:38  poetry init
+ 5493  2025-06-17 13:39  poetry install
+ 5494  2025-06-17 13:47  rm poetry.lock
+ 5495  2025-06-17 13:47  rm pyproject.toml
+ 5496  2025-06-17 13:47  touch poetry.lock
+ 5497  2025-06-17 13:49  poetry install
+ 5498  2025-06-17 13:50  touch pyproject.toml
+ 5499  2025-06-17 13:51  poetry install
+ 5500  2025-06-17 13:52  poetry shell
+ 5501  2025-06-17 13:53  echo $JAVA_HOME\n
+ 5502  2025-06-17 13:53  jupyter notebook
+ 5503  2025-06-17 13:53  pip install notebook
+ 5504  2025-06-17 15:54  curl https://wagon-public-datasets.s3.amazonaws.com/data-engineering/04-Spark/olist_customers_dataset.csv > olist_customers_dataset.csv
+ 5505  2025-06-17 15:54  curl https://wagon-public-datasets.s3.amazonaws.com/data-engineering/04-Spark/olist_geolocation_dataset.csv > olist_geolocation_dataset.csv
+ 5506  2025-06-17 15:54  jupyter notebook
+ 5507  2025-06-17 16:10  touch baseline.ipynb
+ 5508  2025-06-17 16:12  touch baseline.py
+ 5509  2025-06-17 16:12  poetry run python baseline.py
+ 5510  2025-06-17 17:13  curl https://wagon-public-datasets.s3.amazonaws.com/flats.csv > flats.csv
+ 5511  2025-06-17 17:23  git add . 
+ 5512  2025-06-17 17:23  git status
+ 5513  2025-06-17 17:23  git commit -m "lecture exercise done"
+ 5514  2025-06-17 17:23  git push
+ 5515  2025-06-17 17:45  cd ~/code/emberhome/data-engineering-challenges/
+ 5516  2025-06-17 17:45  git pull upstream main -X ours
+ 5517  2025-06-17 17:45  cd 04-Data-at-Scale/02-Spark-Advanced/01-NYC-Taxis
+ 5518  2025-06-17 17:45  code .
+ 5519* 2025-06-17 17:48  direnv reload
+ 5520* 2025-06-17 17:48  gsutil mb -l eu gs://$BUCKET_NAME
+ 5521* 2025-06-17 17:49  wget -P ~/spark/jars https://storage.googleapis.com/hadoop-lib/gcs/gcs-connector-hadoop3-latest.jar
+ 5522* 2025-06-17 17:55  wget -P data https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2009-01.parquet
