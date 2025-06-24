@@ -1,0 +1,63 @@
+ 5592  2025-06-24 09:52  cd ~
+ 5593  2025-06-24 09:52  ls
+ 5594  2025-06-24 09:52  cd code
+ 5595  2025-06-24 09:52  ls
+ 5596  2025-06-24 09:52  cd emberhome/lecture_exercises
+ 5597  2025-06-24 09:52  ls
+ 5598  2025-06-24 09:53  mkdir week21_streaming && cd week21_streaming
+ 5599  2025-06-24 09:53  code . 
+ 5600  2025-06-24 09:54  poetry add pika
+ 5601  2025-06-24 09:54  poetry install
+ 5602  2025-06-24 09:55  poetry init
+ 5603  2025-06-24 09:55  poetry add pika
+ 5604  2025-06-24 09:56  poetry add clickhouse-driver
+ 5605  2025-06-24 09:58  poetry update
+ 5606  2025-06-24 09:58  poetry add clickhouse-driver
+ 5607  2025-06-24 09:59  curl https://wagon-public-datasets.s3.amazonaws.com/data-engineering/streaming/docker-compose.yml > docker-compose.yml
+ 5608  2025-06-24 10:01  mkdir -p mb/plugins && cd mb                                                                                                   \ncurl -L -o plugins/ch.jar https://github.com/ClickHouse/metabase-clickhouse-driver/releases/download/1.2.2/clickhouse.metabase-driver.jar && cd ..
+ 5609  2025-06-24 10:03  docker compose up
+ 5610  2025-06-24 10:04  docker ps
+ 5611  2025-06-24 10:06  docker stop $(docker ps -q)\n
+ 5612  2025-06-24 10:06  docker rm $(docker ps -aq)
+ 5613  2025-06-24 10:06  docker ps 
+ 5614  2025-06-24 10:06  docker compose up
+ 5615  2025-06-24 10:09  touch setup-clickhouse.py
+ 5616  2025-06-24 10:11  python setup-clickhouse.py
+ 5617  2025-06-24 10:14  poetry run python setup-clickhouse.py
+ 5618  2025-06-24 10:18  touch publish_sales.py
+ 5619  2025-06-24 10:21  poetry run python publish_sales.py
+ 5620  2025-06-24 10:26  touch subscriber.py
+ 5621  2025-06-24 10:29  poetry run python subscriber.py
+ 5622  2025-06-24 10:38  docker compose down
+ 5623  2025-06-24 10:39  docker compose up
+ 5624  2025-06-24 10:41  poetry run python setup-clickhouse.py
+ 5625  2025-06-24 10:42  poetry run python publish_sales.py
+ 5626  2025-06-24 10:42  poetry run python subscriber.py
+ 5627  2025-06-24 10:44  poetry run python setup-clickhouse.py
+ 5628  2025-06-24 10:45  docker compose down
+ 5629  2025-06-24 10:45  docker compose up
+ 5630  2025-06-24 10:48  poetry run python setup-clickhouse.py
+ 5631  2025-06-24 10:51  poetry run publish_sales.py
+ 5632  2025-06-24 10:51  poetry run python publish_sales.py
+ 5633  2025-06-24 10:51  poetry run python subscriber.py
+ 5634  2025-06-24 10:55  docker compose down
+ 5635  2025-06-24 10:55  docker compose up
+ 5636  2025-06-24 10:59  poetry run python setup-clickhouse.py
+ 5637  2025-06-24 11:00  poetry run python publish_sales.py
+ 5638  2025-06-24 11:00  poetry run python subscriber.py
+ 5639  2025-06-24 11:01  docker ps\n
+ 5640  2025-06-24 11:03  docker logs -f 6c1d6aa5188c\n
+ 5641  2025-06-24 11:04  docker compose down
+ 5642  2025-06-24 11:05  docker compose up
+ 5643  2025-06-24 11:08  lsof -i :3000\n
+ 5644  2025-06-24 11:09  docker ps -a\n
+ 5645  2025-06-24 11:10  docker ps
+ 5646  2025-06-24 11:12  code .
+ 5647  2025-06-24 11:14  docker ps
+ 5648  2025-06-24 11:14  docker compose down
+ 5649  2025-06-24 11:14  docker ps
+ 5650  2025-06-24 11:14  docker compose up 
+ 5651  2025-06-24 11:17  poetry run python setup-clickhouse.py
+ 5652  2025-06-24 11:17  poetry run python publish_sales.py
+ 5653  2025-06-24 11:17  poetry run subscriber.py
+ 5654  2025-06-24 11:18  poetry run python subscriber.py
