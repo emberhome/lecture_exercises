@@ -1,0 +1,16 @@
+ 5807  2025-07-01 10:04  poetry run python publisher.py
+ 5808  2025-07-01 10:11  poetry run python subscriber.py
+ 5809  2025-07-01 10:12  poetry run publisher.py
+ 5810  2025-07-01 10:12  poetry run python publisher.py
+ 5811  2025-07-01 10:24  touch beam_sample.py
+ 5812  2025-07-01 10:26  touch log_sample.txt
+ 5813  2025-07-01 10:32  poetry run python beam_sample.py
+ 5814  2025-07-01 10:32  poetry add apache-beam
+ 5815  2025-07-01 10:33  poetry run python beam_sample.py
+ 5816  2025-07-01 10:50  touch output.txt
+ 5817  2025-07-01 10:51  poetry run python beam_sample.py
+ 5818  2025-07-01 11:08  touch window
+ 5819  2025-07-01 11:09  touch window_publisher.py
+ 5820  2025-07-01 11:22  touch window_subscriber.py
+ 5821  2025-07-01 11:23  poetry run python window_publisher.py
+ 5822  2025-07-01 11:33  poetry run python window_subscriber.py
