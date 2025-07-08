@@ -1,0 +1,64 @@
+ 5933  2025-07-08 08:43  ls
+ 5934  2025-07-08 08:43  cd emberhome
+ 5935  2025-07-08 08:43  ls
+ 5936  2025-07-08 08:43  cd lecture_exercises
+ 5937  2025-07-08 08:43  mkdir week23_scaling_apis
+ 5938  2025-07-08 08:43  cd week23_scaling_apis
+ 5939  2025-07-08 08:43  code . 
+ 5940  2025-07-08 08:44  touch logging_demo.py
+ 5941  2025-07-08 08:45  python run logging_demo.py
+ 5942  2025-07-08 08:45  python logging_demo.py
+ 5943  2025-07-08 08:47  touch logging.conf
+ 5944  2025-07-08 08:50  touch logging_demo_w_config.py
+ 5945  2025-07-08 08:58  python logging_demo_w_config.py
+ 5946  2025-07-08 09:07  sudo apt-get update && sudo apt-get install -y wget gnupg apt-transport-https
+ 5947  2025-07-08 09:08  wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
+ 5948  2025-07-08 09:08  echo "deb https://artifacts.elastic.co/packages/8.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-8.x.list
+ 5949  2025-07-08 09:08  sudo apt-get update && sudo apt-get install logstash
+ 5950  2025-07-08 09:09  logstash --version
+ 5951  2025-07-08 09:09  sudo apt-get update && sudo apt-get install logstash
+ 5952  2025-07-08 09:09  logstash --version
+ 5953  2025-07-08 09:10  sudo find / -name logstash -type f 2>/dev/null\n
+ 5954  2025-07-08 09:12  sudo /usr/share/logstash/bin/logstash --version
+ 5955  2025-07-08 09:12  echo 'export PATH=$PATH:/usr/share/logstash/bin' >> ~/.zshrc
+ 5956  2025-07-08 09:12  nano ~/.zshrc
+ 5957  2025-07-08 09:16  logstash --version
+ 5958  2025-07-08 09:16  source ~/.zshrc\n
+ 5959  2025-07-08 09:16  logstash --version
+ 5960  2025-07-08 09:17  cd /usr/share/logstash/bin/logstash
+ 5961  2025-07-08 09:17  cd ~/usr/share/logstash/bin/logstash
+ 5962  2025-07-08 09:18  cd /usr/share/logstash/bin
+ 5963  2025-07-08 09:18  ls -al
+ 5964  2025-07-08 09:18  cd logstash
+ 5965  2025-07-08 09:19  pqd
+ 5966  2025-07-08 09:19  pwd
+ 5967  2025-07-08 09:19  cd ..
+ 5968  2025-07-08 09:19  pwd
+ 5969  2025-07-08 09:19  ls
+ 5970  2025-07-08 09:21  cd ~
+ 5971  2025-07-08 09:21  ls
+ 5972  2025-07-08 09:21  cd code
+ 5973  2025-07-08 09:21  ls
+ 5974  2025-07-08 09:21  cd emberhome/lecture_exercises/week23_scaling_apis
+ 5975  2025-07-08 09:21  touch file_logstash.conf
+ 5976  2025-07-08 09:22  touch output.json
+ 5977  2025-07-08 09:23  sudo logstash file_logstash.conf 
+ 5978  2025-07-08 09:23  logstash file_logstash.conf 
+ 5979  2025-07-08 09:25  logstash -f file_logstash.conf 
+ 5980  2025-07-08 09:26  sudo logstash -f file_logstash.conf\n
+ 5981  2025-07-08 09:27  sudo /usr/share/logstash/bin/logstash -f file_logstash.conf\n
+ 5982  2025-07-08 09:29  sudo /usr/share/logstash/bin/logstash -f /home/eberniczky/code/emberhome/lecture_exercises/week23_scaling_apis/file_logstash.conf
+ 5983  2025-07-08 09:47  docker compose up
+ 5984  2025-07-08 09:47  cd load_testing_demo
+ 5985  2025-07-08 09:47  docker compose up
+ 5986  2025-07-08 10:14  docker compose down 
+ 5987  2025-07-08 10:20  cd ..
+ 5988  2025-07-08 10:21  python async_demo/simple_sync.py
+ 5989  2025-07-08 10:25  python async_demo/simple_async.py
+ 5990  2025-07-08 13:01  python async_demo/io_sync.py
+ 5991  2025-07-08 13:02  python async_demo/io_async.py
+ 5992  2025-07-08 13:03  poetry add aiofiles\n
+ 5993  2025-07-08 13:04  poetry init
+ 5994  2025-07-08 13:04  poetry add aiofiles\n
+ 5995  2025-07-08 13:04  python async_demo/io_async.py
+ 5996  2025-07-08 13:05  poetry run python async_demo/io_async.py\n
